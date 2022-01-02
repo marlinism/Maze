@@ -1,0 +1,85 @@
+Sat Jan  1 22:44:48 PST 2022
+Darwin s-iMac.local 21.1.0 Darwin Kernel Version 21.1.0: Wed Oct 13 17:33:23 PDT 2021; root:xnu-8019.41.5~1/RELEASE_X86_64 x86_64
+uid=501(marlin) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),98(_lpadmin),701(com.apple.sharepoint.group.1),33(_appstore),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae)
+=====================================================
+1. Compiles without warnings with -Wall -Wextra flags
+=====================================================
+=====================================================
+2. Runs and produces correct output
+=====================================================
+*** Solving maze0.txt
+Path: NNNNNESSSSENNNNESSSSENNNNESSSSENNNNN
+XXXXXXXXXXXXXXXXXX*X
+X           *******X
+X           *******X
+X           *******X
+X           *******X
+X           *******X
+XXXXXXXXXXXX*XXXXXXX
+
+
+*** Solving maze1.txt
+Path: NNWWWWWNNNEEEEEESEESSSEEENNNNN
+XXXXXXXXXXXXXXXXXX*X
+X     X*******XXXX*X
+X XXXXX*XXXXX***XX*X
+X XXXXX*XXXXXXX*XX*X
+X X    ******XX*XX*X
+X XXXXXXXXXX*XX****X
+XXXXXXXXXXXX*XXXXXXX
+
+
+*** Solving maze2.txt
+Path: NEEEEEENNNNN
+XXXXXXXXXXXXXXXXXX*X
+X     X++++++XXXXX*X
+X XXXXX+XXXX+X++XX*X
+X XXXXX+XXXX+XX+XX*X
+X X++++++++X+XX+XX*X
+X XXXXXXXXXX*******X
+XXXXXXXXXXXX*XXXXXXX
+
+
+*** Solving maze3.txt
+Failed to solve: maze3.txt
+XXXXXXXXXXXXXXXXXX X
+X+++++X++++++XXXXX X
+X+X+X+X+X++X+X++XX X
+X+X+XXX+XXXX+XX+XX X
+X+X++++++++X+XX+XX X
+X+XXXXXXXXXX+++++X X
+XXXXXXXXXXXX+XXXXXXX
+
+
+*** Solving badfile.txt
+Unable to open file: badfile.txt
+Failed to load badfile.txt
+Done!
+=====================================================
+3. clang-tidy warnings are fixed
+=====================================================
+WARNING: clang-tidy not available.
+=====================================================
+4. clang-format does not find any formatting issues
+=====================================================
+WARNING: clang-format not available
+=====================================================
+5. No memory leaks using g++
+=====================================================
+=====================================================
+6. No memory leaks using valgrind, look for "definitely lost" 
+=====================================================
+WARNING: valgrind not available
+=====================================================
+7. Tests have full code coverage
+=====================================================
+Unable to open file: badfile.txt
+Failed to load badfile.txt
+./check-code-coverage.sh: line 42: llvm-profdata: command not found
+ERROR: ./check-code-coverage.sh: Failed to create a.out.profdata
+Sat Jan  1 22:45:02 PST 2022
+=====================================================
+To create an output.txt file with all the output from this script
+Run the below command
+      ./create-output.sh > output.txt 2>&1 
+=====================================================
